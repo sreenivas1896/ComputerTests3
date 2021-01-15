@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/l1"
+        android:weightSum="8"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="50dp"
+        android:text="@string/test_finished"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/test_finished"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bt_no"
+        android:foreground="@drawable/custom_ripple"
+        android:src="@drawable/ic_close"
+        android:layout_height="30dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:id="@+id/attempted_questions"
+        android:text="@string/do_you_want_to_quit_the_test_any_way"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/attempted_questions"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/btn_exit"
+            android:layout_width="80dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:foreground="@drawable/custom_ripple"
+            android:textColor="@color/colorWhite"
+            android:background="@color/red"/>
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="80dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:foreground="@drawable/custom_ripple"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:background="@color/gnt_ad_green"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

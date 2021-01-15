@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/ic_waves"
+    tools:context=".QuestionsActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="time:00:00"
+        android:layout_marginTop="2dp"
+        android:textColor="#fff"
+        android:background="#E65100"
+        android:padding="2dp"
+        android:id="@+id/time"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Score:0"
+        android:textSize="20sp"
+        android:id="@+id/sc"
+        android:padding="2dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#fff"
+        android:background="#E65100"
+        android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/sc"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Questions"
+        android:id="@+id/tvque"
+        android:textColor="#B71C1C"
+        android:layout_marginBottom="52dp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answersgrp"
+        android:layout_below="@+id/tvque"
+        android:clickable="true">
+        <!--android:layout-->
+        <!--android:checkedButton="@+id/radioButton"-->
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A"
+            android:id="@+id/radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:id="@+id/radioButton3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:id="@+id/radioButton4"
+            android:checked="false" />
+
+    </RadioGroup>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/button3"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="#FF5722"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+</RelativeLayout>
